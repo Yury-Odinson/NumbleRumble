@@ -1,4 +1,4 @@
-import { attemptCounter, buttonCheck, inputNumber, inputSetN } from "./constants.js";
+import { attemptCounter, buttonCheck, buttonNewGame, inputNumber, inputSetN } from "./constants.js";
 
 // random number
 let number = Math.floor(Math.random() * 100) + 1;
@@ -35,7 +35,6 @@ function getHelp() {
 
 function counter() {
     count++;
-    console.log(count);
     if (count % 3 == 0) {
         console.log("this");
         if (number % 2 == 0) {
@@ -53,4 +52,16 @@ function setHiddenNumber(n) {
 // set custom range number
 inputSetN.onchange = (e) => {
     setHiddenNumber(e.target.value);
+}
+
+function newGame() {
+    number = Math.floor(Math.random() * 100) + 1;
+    roofNum = 100;
+    count = 0;
+    attemptCounter.textContent = count;
+    console.log(number);
+}
+
+buttonNewGame.onclick = () => {
+    newGame();
 }
