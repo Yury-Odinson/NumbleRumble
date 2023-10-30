@@ -1,0 +1,19 @@
+:root {
+    --BackgroundDark: #F0ECF4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    background-color: var(--BackgroundDark);
+    transition: 0.2s;
+}
