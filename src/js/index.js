@@ -1,4 +1,4 @@
-import { buttonCheck, inputNumber, inputSetN } from "./constants.js";
+import { attemptCounter, buttonCheck, inputNumber, inputSetN } from "./constants.js";
 
 // random number
 let number = Math.floor(Math.random() * 100) + 1;
@@ -15,8 +15,9 @@ inputNumber.onchange = (e) => {
     }
 }
 
-buttonCheck.onclick = (e) => {
-    if (e.target.value == number) {
+buttonCheck.onclick = () => {
+    attemptCounter.textContent = count + 1
+    if (inputNumber.value == number) {
         return console.log("YEP!");
     } else {
         getHelp();
