@@ -1,0 +1,12 @@
+.wrapper {
+    margin: 100px auto;
+    padding: 40px;
+    display: flex;
+    width: 700px;
+    background-color: #fff;
+}
+
+.wrapper>* {
+    margin: 0 auto;
+}
+
