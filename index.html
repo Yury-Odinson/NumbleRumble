@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +10,21 @@
 
     <title>NumbleRumble</title>
 </head>
+
 <body>
     <div class="wrapper">
         <label>
             <input type="number" id="inputNumber">
             <button id="buttonCheck">check</button>
         </label>
+        <label style="padding: 20px; width: 200px; border: 1px solid red;">
+            <span>здесь задаём диапазон от 0 до N</span>
+            <input type="number" id="inputSetN" placeholder="input N">
+            <button id="buttonSetN">set range number</button>
+        </label>
     </div>
-    
+
     <script type="module" src="./src/js/index.js"></script>
 </body>
+
 </html>

@@ -1,14 +1,22 @@
-import { buttonCheck, inputNumber } from "./constants.js";
+import { buttonCheck, inputNumber, inputSetN } from "./constants.js";
 
 // random number
-const number = Math.floor(Math.random() * 100) + 1;
-
+let number = Math.floor(Math.random() * 100) + 1;
+console.log(number);
+// max number
+let roofNum = 100;
+// attempt counter
 let count = 0;
 
-console.log(number);
+inputNumber.onchange = (e) => {
+    if (e.target.value > roofNum) {
+        console.log(`max num is ${roofNum}`);
+        inputNumber.value = roofNum;
+    }
+}
 
-buttonCheck.onclick = () => {
-    if (inputNumber.value == number) {
+buttonCheck.onclick = (e) => {
+    if (e.target.value == number) {
         return console.log("YEP!");
     } else {
         getHelp();
@@ -35,4 +43,13 @@ function counter() {
             console.log("число не чётное");
         }
     }
+}
+
+function setHiddenNumber(n) {
+    return number = Math.floor(Math.random() * n) + 1, roofNum = n;
+}
+
+// set custom range number
+inputSetN.onchange = (e) => {
+    setHiddenNumber(e.target.value);
 }
