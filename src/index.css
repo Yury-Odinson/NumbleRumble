@@ -1,0 +1,209 @@
+header {
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+input {
+    font-size: clamp(14px, 2.5vw, 21px);
+}
+
+button {
+    width: 160px;
+    height: 80px;
+    background-color: #63d4a941;
+    font-size: clamp(14px, 2.5vw, 22px);
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+h1,
+h2 {
+
+    font-size: clamp(16px, 2.5vw, 21px);
+}
+
+.nav {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    font-size: clamp(14px, 2.5vw, 21px);
+}
+
+.nav-counter {
+    padding: 0 20px;
+}
+
+.nav-setNum-label {
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #63b4d441;
+    font-size: clamp(14px, 2.5vw, 21px);
+}
+
+#attemptCounter {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#inputSetN {
+    padding: 20px;
+    border: none;
+    width: 130px;
+    height: 40px;
+}
+
+#buttonSetN {
+    border-left: 1px solid #455ca71f;
+    background-color: #ffffff00;
+}
+
+.wrapper {
+    margin: 100px auto;
+    padding: 40px;
+    display: flex;
+    width: 1200px;
+    background-color: #fff;
+}
+
+.wrapper-label {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+#inputNumber {
+    padding: 10px 20px;
+    height: 100%;
+    font-size: 30px;
+    border: none;
+    background-color: var(--BackgroundDark);
+    text-align: center;
+}
+
+.alertArea {
+    padding: 40px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: fit-content;
+}
+
+.customAlert__item {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    height: 60px;
+    border-radius: 6px;
+    background: rgb(255, 0, 0);
+    background: linear-gradient(164deg, rgba(255, 0, 0, 0.1777485994397759) 0%, rgba(255, 0, 0, 0.065703781512605) 100%);
+}
+
+.customAlert__text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #2b062393;
+}
+
+
+.modalWinnerCover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.modalWinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 620px;
+    height: 250px;
+    transform: translate(-50%, -50%);
+    background-color: #cbffe1;
+    z-index: 2;
+}
+
+.modalWinner-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#buttonNewGame__modal {
+    margin-top: 40px;
+    padding: 0 20px;
+    width: fit-content;
+    height: 50px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+
+    .nav,
+    .wrapper {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        padding: 20px;
+    }
+
+    .nav-counter,
+    #buttonNewGame {
+        width: 50%;
+        text-align: center;
+    }
+
+    .nav-setNum-label {
+        width: 100%;
+    }
+
+    .wrapper-label {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 200px;
+    }
+
+    #inputNumber,
+    #buttonCheck {
+        width: 100%;
+        height: 50%;
+    }
+
+    .alertArea {
+        width: 100%;
+    }
+
+    .modalWinnerCover,
+    .modalWinner {
+        width: 100%;
+    }
+
+    .modalWinner-wrapper {
+        width: 100%;
+    }
+
+    #modal__button {
+        margin: 20px 0;
+        width: 100%;
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,52 @@
     <link rel="stylesheet" href="./src/reset.css">
     <link rel="stylesheet" href="./src/index.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+
     <title>NumbleRumble</title>
 </head>
+
 <body>
-    
-    <script src="./src/js/index.js"></script>
+    <header>
+        <div class="nav">
+            <label class="nav-setNum-label">
+                <span>Задайте диапазон числа от 0 до N</span>
+                <input type="number" id="inputSetN" placeholder="input N">
+                <button id="buttonSetN">set range number</button>
+            </label>
+            <div class="nav-counter">
+                <span>Число попыток:</span>
+                <span id="attemptCounter"></span>
+            </div>
+
+            <button id="buttonNewGame">start new game</button>
+        </div>
+    </header>
+    <div class="wrapper">
+        <label class="wrapper-label">
+            <input type="number" id="inputNumber" placeholder="input...">
+            <button id="buttonCheck">check</button>
+        </label>
+    </div>
+
+    <div class="alertArea">
+    </div>
+
+    <div class="modalWinnerCover"></div>
+    <div class="modalWinner">
+        <div class="modalWinner-wrapper">
+            <h1>Поздравляем!</h1>
+            <h2>Вы угадали c <span id="modal__counter">13</span> попытки!</h2>
+            <button id="modal__button">Начать сначала</button>
+        </div>
+    </div>
+
+    <script type="module" src="./src/js/index.js"></script>
+    <script type="module" src="./src/js/UI.js"></script>
+    <script type="module" src="./src/js/modal.js"></script>
+
 </body>
+
 </html>
