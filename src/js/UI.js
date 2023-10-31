@@ -21,7 +21,7 @@ function animationAlert(block) {
             opacity: 1, offset: 0.3
         },
         {
-            opacity: 1, offset: 0.9
+            opacity: 1, offset: 0.8
         },
         {
             opacity: 0, offset: 1

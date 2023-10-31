@@ -8,26 +8,41 @@
     <link rel="stylesheet" href="./src/reset.css">
     <link rel="stylesheet" href="./src/index.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+
     <title>NumbleRumble</title>
 </head>
 
 <body>
+    <header>
+        <div class="nav">
+            <label class="nav-setNum-label">
+                <span>Задайте диапазон числа от 0 до N</span>
+                <input type="number" id="inputSetN" placeholder="input N">
+                <button id="buttonSetN">set range number</button>
+            </label>
+
+            <div>
+                <span>Число попыток:</span>
+                <span id="attemptCounter"></span>
+            </div>
+
+            <button id="buttonNewGame">start new game</button>
+        </div>
+    </header>
     <div class="wrapper">
+
         <label>
             <input type="number" id="inputNumber">
             <button id="buttonCheck">check</button>
         </label>
 
-        <span>Число попыток:</span>
-        <span id="attemptCounter"></span>
 
 
-        <label style="padding: 20px; width: 200px; border: 1px solid red;">
-            <span>здесь задаём диапазон от 0 до N</span>
-            <input type="number" id="inputSetN" placeholder="input N">
-            <button id="buttonSetN">set range number</button>
-        </label>
-        <button id="buttonNewGame">start new game</button>
+
+
     </div>
 
     <div class="alertArea">
@@ -40,7 +55,7 @@
 
     <script type="module" src="./src/js/index.js"></script>
     <script type="module" src="./src/js/UI.js"></script>
-    
+
 </body>
 
 </html>

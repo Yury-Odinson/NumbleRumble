@@ -7,10 +7,10 @@ export const buttonNewGame = document.getElementById("buttonNewGame");
 
 
 // custom alert
-export const customAlertBlock = document.querySelector(".alertArea")
+export const customAlertBlock = document.querySelector(".alertArea");
 // export const alertText = document.querySelector(".customAlert__text")
 
 
 
 
-export const buttonTest = document.getElementById("test")
+export const buttonTest = document.getElementById("test");
