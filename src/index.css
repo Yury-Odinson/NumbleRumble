@@ -101,13 +101,49 @@ button {
 }
 
 
+.modalWinnerCover {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.4;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.modalWinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 620px;
+    height: 250px;
+    transform: translate(-50%, -50%);
+    background-color: #cbffe1;
+    z-index: 2;
+}
+
+.modalWinner-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 
 
 
-
-
-
+#buttonNewGame__modal {
+    margin-top: 40px;
+    padding: 0 20px;
+    width: fit-content;
+    height: 50px;
+    font-size: 14px;
+}
 
 
 

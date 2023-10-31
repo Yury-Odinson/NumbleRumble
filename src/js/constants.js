@@ -10,7 +10,11 @@ export const buttonNewGame = document.getElementById("buttonNewGame");
 export const customAlertBlock = document.querySelector(".alertArea");
 // export const alertText = document.querySelector(".customAlert__text")
 
-
+// modal winner
+export const modalCover = document.querySelector(".modalWinnerCover");
+export const modal = document.querySelector(".modalWinner")
+export const modalButton = document.getElementById("modal__button")
+export const modalCounter = document.getElementById("modal__counter")
 
 
 export const buttonTest = document.getElementById("test");
