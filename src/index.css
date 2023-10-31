@@ -65,13 +65,20 @@ button {
     background-color: #fff;
 }
 
-.wrapper>* {
+.wrapper-label {
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
-
-
-
+#inputNumber {
+    padding: 10px 20px;
+    height: 100%;
+    font-size: 30px;
+    border: none;
+    background-color: var(--BackgroundDark);
+    text-align: center;
+}
 
 .alertArea {
     padding: 40px;

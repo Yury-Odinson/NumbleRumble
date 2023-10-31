@@ -1,5 +1,5 @@
 import { drawAlert } from "./UI.js";
-import { attemptCounter, buttonCheck, buttonNewGame, buttonTest, inputNumber, inputSetN, modalCover, modal } from "./constants.js";
+import { attemptCounter, buttonCheck, buttonNewGame, inputNumber, inputSetN, modalCover, modal } from "./constants.js";
 import { winnerModal } from "./modal.js";
 
 // random number 0 - 100
@@ -41,12 +41,9 @@ function getHelp() {
 function counter() {
     count++;
     if (count % 3 == 0) {
-        console.log("this");
         if (number % 2 == 0) {
-            console.log("число чётное");
             drawAlert("число чётное");
         } else {
-            console.log("число не чётное");
             drawAlert("число нечётное");
         }
     }
@@ -74,5 +71,3 @@ export function newGame() {
 buttonNewGame.onclick = () => {
     newGame();
 }
-
-
