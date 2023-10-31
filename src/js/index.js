@@ -1,3 +1,4 @@
+import { drawAlert } from "./UI.js";
 import { attemptCounter, buttonCheck, buttonNewGame, inputNumber, inputSetN } from "./constants.js";
 
 // random number
@@ -7,6 +8,9 @@ console.log(number);
 let roofNum = 100;
 // attempt counter
 let count = 0;
+
+attemptCounter.textContent = "0"
+
 
 inputNumber.onchange = (e) => {
     if (e.target.value > roofNum) {
@@ -39,8 +43,10 @@ function counter() {
         console.log("this");
         if (number % 2 == 0) {
             console.log("число чётное");
+            drawAlert("число чётное");
         } else {
             console.log("число не чётное");
+            drawAlert("число нечётное");
         }
     }
 }
@@ -59,6 +65,7 @@ function newGame() {
     roofNum = 100;
     count = 0;
     attemptCounter.textContent = count;
+    inputSetN.value = "";
     console.log(number);
 }
 
