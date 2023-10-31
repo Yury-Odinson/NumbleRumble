@@ -50,7 +50,7 @@ function counter() {
 }
 
 function setHiddenNumber(n) {
-    return number = Math.floor(Math.random() * n) + 1, roofNum = n;
+    return number = Math.floor(Math.random() * n) + 1, roofNum = Number(n);
 }
 
 // set custom range number
