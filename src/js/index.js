@@ -20,12 +20,20 @@ inputNumber.addEventListener("input", (e) => {
     }
 })
 
-buttonCheck.onclick = () => {
+inputNumber.addEventListener("keyup", (e) => {
+    if (e.code === "Enter") {
+        checkNumber();
+    }
+})
+
+buttonCheck.onclick = () => checkNumber();
+
+function checkNumber() {
     attemptCounter.textContent = count + 1
     if (inputNumber.value == number) {
         return winnerModal(count + 1);
     } else {
-        getHelp();
+        return getHelp();
     }
 }
 
