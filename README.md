@@ -1,2 +1,5 @@
 # NumbleRumble
-this is a number game
+
+### https://yury-odinson.github.io/NumbleRumble/
+
+guess the number :)
